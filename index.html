@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NBA — Player Finder</title>
+  <title>Anime Finder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>NBA — Player Finder</h1></header>
+  <header><h1>Anime Finder</h1></header>
 
   <main>
     <div class="container">
@@ -15,37 +15,37 @@
       <!-- Top: banner -->
       <div class="top-half">
         <div class="atopbox" id="banner">
-          <h2 id="bannerName">Busca un jugador (ej: Curry, LeBron, Doncic)</h2>
+          <h2 id="bannerName">Busca un anime (ej: Naruto, One Piece, Fullmetal)</h2>
         </div>
       </div>
 
       <!-- Bottom: controles / resultados / detalles -->
       <div class="bot-half">
         <div class="left-half">
-          <h3>Buscar jugador</h3>
-          <input id="searchInput" type="text" placeholder="Nombre o apellido (ej: LeBron)" />
+          <h3>Buscar anime</h3>
+          <input id="searchInput" type="text" placeholder="Nombre de anime (ej: Naruto)" />
           <button id="btnSearch">Buscar</button>
           <button id="btnRandom">Aleatorio</button>
 
           <hr />
 
-          <h4>Resultados</h4>
+          <h4>Resultados de búsqueda</h4>
           <ul id="resultsList" style="list-style:none;padding-left:0;margin-top:8px;"></ul>
         </div>
 
         <div class="right-half">
           <div class="etopbox" id="playerBasic">
-            <div id="basicInfo">Selecciona un jugador para ver detalle.</div>
+            <div id="basicInfo">Selecciona un anime para ver detalle.</div>
           </div>
 
           <div class="inner-bot">
             <div class="leftbox" id="boxStats">
-              <h3>Promedios (season_averages)</h3>
+              <h3>Información del anime</h3>
               <div id="statsContent">—</div>
             </div>
 
             <div class="rightbox" id="boxExtra">
-              <h3>Equipo / Extras</h3>
+              <h3>Géneros / Extras</h3>
               <div id="teamInfo">—</div>
             </div>
           </div>
@@ -55,7 +55,6 @@
     </div>
   </main>
 
-  <!-- link al script.js (asegúrate de crear este archivo) -->
   <script src="script.js"></script>
 </body>
 </html>
