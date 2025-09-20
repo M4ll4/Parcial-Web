@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Search — Proyecto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>NBA — Player Finder</h1></header>
+
+  <main>
+    <div class="container">
+
+      <!-- Top: banner con foto del jugador -->
+      <div class="top-half">
+        <div class="atopbox" id="banner">
+          <h2 id="bannerName">Busca un jugador</h2>
+        </div>
+      </div>
+
+      <!-- Bottom: izquierda = controles / resultados (lista), derecha = detalles -->
+      <div class="bot-half">
+        <div class="left-half">
+          <h3>Buscar jugador</h3>
+          <input id="searchInput" type="text" placeholder="Ej: LeBron James" />
+          <button id="btnSearch">Buscar</button>
+          <button id="btnRandom">Jugador aleatorio</button>
+
+          <hr />
+
+          <h4>Resultados (clic para ver)</h4>
+          <ul id="resultsList" style="list-style:none;padding-left:0;"></ul>
+        </div>
+
+        <div class="right-half">
+          <div class="etopbox" id="playerBasic">
+            <h2>Detalle jugador</h2>
+            <div id="basicInfo"></div>
+          </div>
+
+          <div class="inner-bot">
+            <div class="leftbox" id="boxStats">
+              <h3>Promedios (season_averages)</h3>
+              <div id="statsContent">Busca un jugador para ver promedios</div>
+            </div>
+
+            <div class="rightbox" id="boxExtra">
+              <h3>Equipo / Extras</h3>
+              <div id="teamInfo">Información del equipo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
