@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NBA Search — Proyecto</title>
+  <title>NBA — Player Finder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,42 +12,41 @@
   <main>
     <div class="container">
 
-      <!-- Top: banner con foto del jugador -->
+      <!-- Top: banner -->
       <div class="top-half">
         <div class="atopbox" id="banner">
-          <h2 id="bannerName">Busca un jugador</h2>
+          <h2 id="bannerName">Busca un jugador (ej: Curry, LeBron, Doncic)</h2>
         </div>
       </div>
 
-      <!-- Bottom: izquierda = controles / resultados (lista), derecha = detalles -->
+      <!-- Bottom: controles / resultados / detalles -->
       <div class="bot-half">
         <div class="left-half">
           <h3>Buscar jugador</h3>
-          <input id="searchInput" type="text" placeholder="Ej: LeBron James" />
+          <input id="searchInput" type="text" placeholder="Nombre o apellido (ej: LeBron)" />
           <button id="btnSearch">Buscar</button>
-          <button id="btnRandom">Jugador aleatorio</button>
+          <button id="btnRandom">Aleatorio</button>
 
           <hr />
 
-          <h4>Resultados (clic para ver)</h4>
-          <ul id="resultsList" style="list-style:none;padding-left:0;"></ul>
+          <h4>Resultados</h4>
+          <ul id="resultsList" style="list-style:none;padding-left:0;margin-top:8px;"></ul>
         </div>
 
         <div class="right-half">
           <div class="etopbox" id="playerBasic">
-            <h2>Detalle jugador</h2>
-            <div id="basicInfo"></div>
+            <div id="basicInfo">Selecciona un jugador para ver detalle.</div>
           </div>
 
           <div class="inner-bot">
             <div class="leftbox" id="boxStats">
               <h3>Promedios (season_averages)</h3>
-              <div id="statsContent">Busca un jugador para ver promedios</div>
+              <div id="statsContent">—</div>
             </div>
 
             <div class="rightbox" id="boxExtra">
               <h3>Equipo / Extras</h3>
-              <div id="teamInfo">Información del equipo</div>
+              <div id="teamInfo">—</div>
             </div>
           </div>
         </div>
@@ -56,6 +55,7 @@
     </div>
   </main>
 
+  <!-- link al script.js (asegúrate de crear este archivo) -->
   <script src="script.js"></script>
 </body>
 </html>
